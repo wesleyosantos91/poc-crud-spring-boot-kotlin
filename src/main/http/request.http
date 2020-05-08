@@ -1,0 +1,29 @@
+### C - Create
+POST http://localhost:8080/persons
+Content-Type: application/json
+
+{
+  "name": "Wesley Oliveira Santos",
+  "dateOfBirth": "1991-06-12",
+  "cpf": "00000000001",
+  "email": "wesleyosantos91@gmail.com"
+}
+
+### R - Read
+GET http://localhost:8080/persons
+Content-Type: application/json
+
+### U - Update
+PUT http://localhost:8080/persons/1
+Content-Type: application/json
+
+{
+  "name": "Wesley Oliveira Santos",
+  "dateOfBirth": "1991-06-12",
+  "cpf": "00000000002",
+  "email": "wesleyosantos91@gmail.com"
+}
+
+### D - Delete
+DELETE http://localhost:8080/persons/1
+Content-Type: application/json
