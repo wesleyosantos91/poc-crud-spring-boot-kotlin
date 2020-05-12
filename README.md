@@ -2,6 +2,8 @@
 ## Prova de conceito - CRUD SPRING BOOT - KOTLIN
 
 > O projeto tem como objetivo demonstrar a ultilização do Kotlin com SpringBoot, com um crud de Pessoa.
+# Build
+[![Build Status](https://travis-ci.com/wesleyosantos91/poc-api-first.svg?branch=master)](https://travis-ci.com/wesleyosantos91/poc-api-first)
 
 # Tecnologias
  - Kotlin 1.3.718
