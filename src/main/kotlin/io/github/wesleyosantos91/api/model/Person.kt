@@ -1,15 +1,8 @@
-package com.gitlab.wesleyosantos91.backend.kotlin.model
+package io.github.wesleyosantos91.api.model
 
 import java.time.LocalDate
 import javax.persistence.*
 
-/**
- *
- * @author : wesleyosantos91
- * @Date : 07/05/20
- * @Contact : wesleyosantos91@gmail.com
- *
- **/
 @Entity
 @Table(name = "Persons")
 data class Person(
@@ -29,7 +22,5 @@ data class Person(
         val cpf: String,
 
         @Column(name = "email")
-        val email: String?
-) {
-        constructor(name: String, dateOfBirth: LocalDate, cpf: String, email: String?) : this(null, name, dateOfBirth, cpf, email)
-}
+        val email: String
+) {}

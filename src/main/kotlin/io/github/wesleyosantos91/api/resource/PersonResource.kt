@@ -1,23 +1,13 @@
-package com.gitlab.wesleyosantos91.backend.kotlin.resource
+package io.github.wesleyosantos91.api.resource
 
-import com.gitlab.wesleyosantos91.backend.kotlin.mapper.PersonMapper
-import com.gitlab.wesleyosantos91.backend.kotlin.request.CreatePersonRequest
-import com.gitlab.wesleyosantos91.backend.kotlin.request.UpdatePersonRequest
-import com.gitlab.wesleyosantos91.backend.kotlin.response.PersonResponse
-import com.gitlab.wesleyosantos91.backend.kotlin.service.PersonService
+import io.github.wesleyosantos91.api.request.CreatePersonRequest
+import io.github.wesleyosantos91.api.request.UpdatePersonRequest
+import io.github.wesleyosantos91.api.response.PersonResponse
+import io.github.wesleyosantos91.api.service.PersonService
 import org.springframework.http.HttpStatus
 import org.springframework.http.ResponseEntity
-import org.springframework.transaction.annotation.Transactional
 import org.springframework.web.bind.annotation.*
-import java.time.LocalDate
 
-/**
- *
- * @author : wesleyosantos91
- * @Date : 07/05/20
- * @Contact : wesleyosantos91@gmail.com
- *
- **/
 @RestController
 @RequestMapping("persons")
 class PersonResource (

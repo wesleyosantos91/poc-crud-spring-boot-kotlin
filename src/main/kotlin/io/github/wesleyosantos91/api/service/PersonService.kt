@@ -1,28 +1,18 @@
-package com.gitlab.wesleyosantos91.backend.kotlin.service
+package io.github.wesleyosantos91.api.service
 
-import com.gitlab.wesleyosantos91.backend.kotlin.exception.ObjectNotFoundException
-import com.gitlab.wesleyosantos91.backend.kotlin.mapper.PersonMapper
-import com.gitlab.wesleyosantos91.backend.kotlin.model.Person
-import com.gitlab.wesleyosantos91.backend.kotlin.repository.PersonRepository
-import com.gitlab.wesleyosantos91.backend.kotlin.request.CreatePersonRequest
-import com.gitlab.wesleyosantos91.backend.kotlin.request.UpdatePersonRequest
-import com.gitlab.wesleyosantos91.backend.kotlin.response.PersonResponse
+import io.github.wesleyosantos91.api.exception.ObjectNotFoundException
+import io.github.wesleyosantos91.api.mapper.PersonMapper
+import io.github.wesleyosantos91.api.model.Person
+import io.github.wesleyosantos91.api.repository.PersonRepository
+import io.github.wesleyosantos91.api.request.CreatePersonRequest
+import io.github.wesleyosantos91.api.request.UpdatePersonRequest
+import io.github.wesleyosantos91.api.response.PersonResponse
 import org.springframework.stereotype.Service
 
-/**
- *
- * @author : wesleyosantos91
- * @Date : 07/05/20
- * @Contact : wesleyosantos91@gmail.com
- *
- **/
 @Service
-class PersonService(
-        private val personRepository: PersonRepository
-) {
+class PersonService(private val personRepository: PersonRepository) {
 
     val personMapper = PersonMapper()
-
 
     fun findByAll(): List<PersonResponse> {
         return personRepository.findAll().map { personMapper.convertPersonToPersonResponse(it) }

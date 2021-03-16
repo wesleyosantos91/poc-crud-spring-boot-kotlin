@@ -1,1 +1,1 @@
-rootProject.name = "poc-spring-boot-kotlin"
+rootProject.name = "poc-crud-spring-boot-kotlin"

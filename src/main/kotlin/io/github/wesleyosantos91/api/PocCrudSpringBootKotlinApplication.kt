@@ -1,11 +1,11 @@
-package com.gitlab.wesleyosantos91.backend.kotlin
+package io.github.wesleyosantos91.api
 
 import org.springframework.boot.autoconfigure.SpringBootApplication
 import org.springframework.boot.runApplication
 
 @SpringBootApplication
-class PocSpringBootKotlinApplication
+class PocCrudSpringBootKotlinApplication
 
 fun main(args: Array<String>) {
-    runApplication<PocSpringBootKotlinApplication>(*args)
+	runApplication<PocCrudSpringBootKotlinApplication>(*args)
 }
